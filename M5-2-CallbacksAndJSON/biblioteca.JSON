@@ -1,0 +1,16 @@
+{
+    "libros": [
+        { "titulo": "Cien años de soledad", 
+        "autor": "Gabriel García Márquez", 
+        "genero": "Realismo mágico", 
+        "disponible": true },
+        { "titulo": "1984", 
+        "autor": "George Orwell", 
+        "genero": "Distopía", 
+        "disponible": true },
+        { "titulo": "El Conde de Montecristo", "autor": "Alexandre Dumas", "genero": "Aventura", "disponible": true },
+        { "titulo": "Hábitos Atómicos", "autor": "James Clear", "genero": "Desarrollo personal", "disponible": true },
+        { "titulo": "Sapiens: De animales a dioses", "autor": "Yuval Noah Harari", "genero": "Historia", "disponible": true },
+        { "titulo": "El arte de la guerra", "autor": "Sun Tzu", "genero": "Estrategia", "disponible": true }
+    ]
+}
