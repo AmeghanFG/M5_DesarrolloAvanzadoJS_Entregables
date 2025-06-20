@@ -9,13 +9,22 @@ body {
     height: 100vh;
     margin: 0;
     padding: 1rem;
-    background: black;
+    background: linear-gradient(45deg, purple, blue, red, black);
+    background-size: 400% 400%; /* Expande el tamaño del fondo a cuatro veces el ancho y alto del contenedor */
+    animation: fondoAnimado 20s ease infinite; /* 20s para evitar marear, movimiento lento al inicio que luego acelera y que se repine indefinidamente*/
 }
 
-
+@keyframes fondoAnimado { /* Animación de movimiento del fondo */
+    0% { background-position: 0% 50%; }
+    25% { background-position: 100% 50%; }
+    50% { background-position: 100% 0%; }
+    75% { background-position: 0% 0%; }
+    100% { background-position: 0% 50%; }
+}
 
 h1 {
     color: antiquewhite;
+    text-align: center;
 }
 
 #container {
@@ -23,10 +32,44 @@ h1 {
     margin: 0 auto;
     padding: 2rem;
     background-color: #f9f9f9;
-    border-radius: 8px;
-
+    border-radius: 15px;
 }
 
 #errors{
     color:crimson;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 100vh;
+    border: none;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+.btnRegistrar {
+    text-align: center;
+}
+
+.btnRegistrar input[type="submit"] {
+    width: 40%;
+    background-color: #007bff;
+    color: white;
+    border-radius: 100vh;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0;
 }
